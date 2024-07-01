@@ -1,0 +1,25 @@
+noip setting up in my pi 3b+ 
+
+if noip crases or not working try this one if it cant restart 
+
+
+go to or execute nano /lib/systemd/system/noip-duc.service
+
+and put this in it 
+
+"
+[Unit]
+Description=No-IP Dynamic Update Client
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/noip2
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+"
+
+this will solve the issue
+
