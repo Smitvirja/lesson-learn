@@ -23,3 +23,18 @@ WantedBy=multi-user.target
 
 this will solve the issue
 
+
+
+and if this not work the do this tooo
+
+
+
+1- sudo wget http://www.noip.com/client/linux/noip-duc-linux.tar.gz
+
+2:- sudo tar xf noip-duc-linux.tar.gz
+cd noip-2.1.9-1  # Adjust the version number if needed
+
+3;- sudo make
+4;- sudo make install
+
+
