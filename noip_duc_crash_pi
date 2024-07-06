@@ -21,6 +21,26 @@ WantedBy=multi-user.target
 
 "
 
+
+or do this 
+"
+[Unit]
+Description=No-IP Dynamic Update Client
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/noip2
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+
+"
+3:- sudo systemctl daemon-reload
+4:- sudo systemctl restart noip-duc
+
 this will solve the issue
 
 
