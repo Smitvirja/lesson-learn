@@ -1,0 +1,2 @@
+https://trickiknow.com/raspberry-pi-3-complete-tutorial-2018-lets-get-started/ 
+follow this setps and use this command ./LCD35-show lite
